@@ -1,0 +1,25 @@
+<div class="row well div-center-align">
+	<div class="imgcontainer">
+    	<img src="./assets/img/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+    <div style="color: red;" class="text-center">{{errorMessage}}</div>
+	<div class="form-group">
+		<label for="username">User Name</label>
+		<input type="text" [(ngModel)]="username" class="form-control" placeholder="Enter Username">
+	</div>
+	<div class="form-group">
+		<label for="username">PassWord</label>
+		<input type="PassWord" [(ngModel)]="password" class="form-control" placeholder="Enter Password">
+	</div>
+	<div class="form-group">
+		<input type="checkbox" checked="checked"> Remember me
+	</div>
+	<div class="form-group">
+		<!-- <button class="btn btn-primary form-control" routerLink="/home">Login</button> -->
+		<button class="btn btn-primary form-control" (click)="logInUser()">Login</button>
+	</div>
+	<div class="cont-right form-group">
+		<span class="psw">Forgot <a href="/">password?</a></span>
+	</div>
+
+</div>

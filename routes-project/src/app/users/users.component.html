@@ -1,0 +1,18 @@
+<table class="table table-striped table-hover ">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>PassWord</th>
+			<th>Phone Number</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tr *ngFor = "let data of usersData">
+		<td>{{data.username}}</td>
+		<td>{{data.password}}</td>
+		<td>{{data.phonenumber}}</td>
+		<td><button class="label label-info" routerLink="../addoredituser/{{data._id}}">Edit</button></td>
+		<td><button class="label label-danger" (click)="DeleteUser(data._id)">Delete</button></td>
+	</tr>
+</table>
